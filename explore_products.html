@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <form action="">
+        name:<input type="text" id="name">
+        <input type="submit" value="submit">
+    </form>
+    </div>
+
+    <script>
+        //Username validation
+
+        $('#name').keyup(function () {
+            validname();
+        });
+
+        function validname() {
+            let cnameValue = $('#name').val();
+            var reg_name = /^[a-zA-Z]+$/;
+            if (!cnameValue.match(reg_name)) {
+                alert("**Please enter valid name");
+                return false;
+            } 
+
+            else if ((cnameValue.length < 3) || (cnameValue.length > 20)) {
+                alert("**length of username must be greater than 3");
+                return false;
+            }
+
+            else {
+            }
+        }
+
+        // phone number validation
+
+        $('#phnnum').keyup(function () {
+            validphone();
+        });
+
+        function validphone() {
+            let cphoneValue = $('#ctcphone').val();
+            var reg_phn = /^[0-9]{10}$/;
+            if (cphoneValue.length == '') {
+                alert("**Please enter Phone number");
+                return false;
+            } else if (!cphoneValue.match(reg_phn)) {
+                alert("**Must be Enter valid phone number");
+                return false;
+            }
+            else {
+            }
+        }
+
+        // address validation
+        $('#address').keyup(function () {
+            validadd();
+        });
+
+        function validadd() {
+            let cfeedValue = $('#ctcfeed').val();
+            if (cfeedValue.length > 100) {
+                alert("**Maximum 100 words");
+                return false;
+            }
+            else {
+            }
+        }
+    </script>
+</body>
+
+</html>

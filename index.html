@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APMC-Farmer</title>
+</head>
+
+<body>
+    <!-- navbar & firstpage  -->
+    <header>
+        <nav>
+            <div class="navbar-content">
+                <div class="logo">
+                    APMC
+                </div>
+                <label id="bars"><i class="fa fa-bars"></i></label>
+                <div class="list-items">
+                    <ul class="navlist">
+                        <li><a class="active" href="#">home</a></li>
+                        <li><a href="logout.php" id="logout">Logout</a></li>
+                        <!-- <li><a href="signup.php" id="register">register</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <div class="left-part">
+                <ul class="left-list">
+                    <li class="active"><a href="#" onClick="show('profile')">PROFILE</a></li>
+                    <li><a href="#" onClick="show('products')">ADD PRODUCTS</a></li>
+                    <li><a href="#" onClick="show('orders')">ORDERS</a></li>
+                    <!-- <li><a href="#" onClick="show('my_bid')">CURRENT BID</a></li> -->
+                </ul>
+            </div>
+            <!-- <div class="right-container"> -->
+
+            <div class="right-part" id="right-profile">
+                <div id="frame">
+                </div>
+            </div>
+
+
+            <!-- </div> -->
+
+        </div>
+    </header>
+
+
+
+    <script>
+        function show(value) {
+            document.getElementById("frame").innerHTML = "<iframe src=\"" + value + ".php\" height=\"100%\" width=\"100%\" ></iframe>";
+        }
+
+    </script>
+</body>
+
+</html>

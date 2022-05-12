@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/home-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.blur {
+    filter: blur(8px);
+    user-select: none;
+    pointer-events: none;
+}
+
+nav {
+    height: 100px;
+}
+
+.logo {
+    font-size: 40PX;
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin: 10px 0 0 80px;
+    line-height: 100px;
+}
+
+.list-items {
+    float: right;
+    margin-right: 80px;
+    line-height: 100px;
+}
+
+.navlist {
+    z-index: 10;
+}
+
+.list-items li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.list-items li a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.list-items li a:hover,
+.list-items li a.active {
+    border-bottom: 2px solid white;
+    transition: 1s;
+}
+
+#bars {
+    font-size: 26px;
+    float: right;
+    margin-right: 40px;
+    line-height: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+.heading {
+    position: relative;
+    left: 50%;
+    top: 48%;
+    width: 100%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px 0 100px;
+    /* z-index: 2; */
+    /* border: 2px solid white; */
+}
+
+iframe {
+    height: 100%;
+    resize: both;
+    padding: 20px 0;
+    border: none;
+    }
+    #frame {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    resize: both;
+    border: 2px solid white;
+    }
+
+.left-part{
+    width: 20%;
+    border: 1px solid white;
+    height: 90%;
+}
+.left-part ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+.left-part ul li{
+    padding: 30px;
+}
+.left-part ul li a{
+    width: 100%;
+}
+.left-part ul li .active, .left-part ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 1s;
+}
+
+.right-part{
+    /* position: absolute; */
+   width: 70%;
+   height: 90%;
+   border: 2px solid white;
+   display: flex;
+   flex-direction: column;
+}
+.right-part .one{
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+.right-part h1{
+    width: 80%;
+    height: 50px;
+    margin: 10px 30px;
+}
+#right-product, #right-orders, #right-bid{
+    position: absolute;
+    /* display: none; */
+}
+
