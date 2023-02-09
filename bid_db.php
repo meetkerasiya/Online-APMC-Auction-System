@@ -3,6 +3,7 @@ session_start();
 ?>
 <?php
     
+
     $showAlert = false; 
     $showError = false; 
     $exists=false;
